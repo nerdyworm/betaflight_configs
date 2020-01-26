@@ -486,7 +486,7 @@ set gyro_sync_denom = 2
 set gyro_lowpass_type = PT1
 set gyro_lowpass_hz = 200
 set gyro_lowpass2_type = PT1
-set gyro_lowpass2_hz = 250
+set gyro_lowpass2_hz = 300
 set gyro_notch1_hz = 0
 set gyro_notch1_cutoff = 0
 set gyro_notch2_hz = 0
@@ -502,8 +502,8 @@ set dyn_notch_range = LOW
 set dyn_notch_width_percent = 3
 set dyn_notch_q = 200
 set dyn_notch_min_hz = 90
-set dyn_lpf_gyro_min_hz = 200
-set dyn_lpf_gyro_max_hz = 500
+set dyn_lpf_gyro_min_hz = 240
+set dyn_lpf_gyro_max_hz = 600
 set gyro_filter_debug_axis = ROLL
 set acc_hardware = AUTO
 set acc_lpf_hz = 10
@@ -914,12 +914,12 @@ profile 1
 
 # profile 1
 set profile_name = -
-set dyn_lpf_dterm_min_hz = 70
-set dyn_lpf_dterm_max_hz = 170
+set dyn_lpf_dterm_min_hz = 84
+set dyn_lpf_dterm_max_hz = 204
 set dterm_lowpass_type = PT1
 set dterm_lowpass_hz = 150
 set dterm_lowpass2_type = PT1
-set dterm_lowpass2_hz = 150
+set dterm_lowpass2_hz = 180
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set vbat_pid_gain = OFF
