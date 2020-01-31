@@ -1,5 +1,3 @@
-dump
-
 # version
 # Betaflight / HMBF41S_FRSKY_INTL (HMBF4) 4.1.0 Jan 18 2020 / 16:39:36 (154272bf0) MSP API: 1.42
 
@@ -367,7 +365,7 @@ aux 18 0 0 900 900 0 0
 aux 19 0 0 900 900 0 0
 
 # adjrange
-adjrange 0 0 0 900 900 0 0 0 0
+adjrange 0 0 1 900 2100 12 1 0 0
 adjrange 1 0 0 900 900 0 0 0 0
 adjrange 2 0 0 900 900 0 0 0 0
 adjrange 3 0 0 900 900 0 0 0 0
@@ -476,9 +474,9 @@ set dyn_lpf_gyro_max_hz = 1000
 set gyro_filter_debug_axis = ROLL
 set acc_hardware = AUTO
 set acc_lpf_hz = 10
-set acc_trim_pitch = -16
+set acc_trim_pitch = 0
 set acc_trim_roll = 0
-set acc_calibration = 0,0,0
+set acc_calibration = 33,-77,214
 set mid_rc = 1500
 set min_check = 1075
 set max_check = 1900
@@ -498,7 +496,7 @@ set rc_smoothing_debug_axis = ROLL
 set rc_smoothing_input_type = BIQUAD
 set rc_smoothing_derivative_type = BIQUAD
 set rc_smoothing_auto_smoothness = 10
-set fpv_mix_degrees = 0
+set fpv_mix_degrees = 12
 set max_aux_channels = 14
 set serialrx_provider = SPEK1024
 set serialrx_inverted = OFF
@@ -827,7 +825,7 @@ set esc_sensor_halfduplex = OFF
 set esc_sensor_current_offset = 0
 set frsky_spi_autobind = OFF
 set frsky_spi_tx_id = 50,154
-set frsky_spi_offset = -11
+set frsky_spi_offset = -6
 set frsky_spi_bind_hop_data = 6,39,74,109,144,179,214,14,49,84,119,154,189,224,24,59,94,129,164,199,234,34,69,104,139,174,209,9,44,79,114,149,184,219,19,54,89,124,159,194,229,29,64,99,136,169,204,0,0,0
 set frsky_x_rx_num = 4
 set frsky_spi_a1_source = VBAT
@@ -923,25 +921,25 @@ set acro_trainer_angle_limit = 20
 set acro_trainer_lookahead_ms = 50
 set acro_trainer_debug_axis = ROLL
 set acro_trainer_gain = 75
-set p_pitch = 55
-set i_pitch = 81
-set d_pitch = 38
-set f_pitch = 86
-set p_roll = 50
-set i_roll = 77
-set d_roll = 35
-set f_roll = 81
-set p_yaw = 40
-set i_yaw = 81
+set p_pitch = 75
+set i_pitch = 75
+set d_pitch = 60
+set f_pitch = 80
+set p_roll = 75
+set i_roll = 75
+set d_roll = 60
+set f_roll = 80
+set p_yaw = 90
+set i_yaw = 100
 set d_yaw = 0
-set f_yaw = 81
+set f_yaw = 80
 set angle_level_strength = 70
 set horizon_level_strength = 70
 set horizon_transition = 100
 set level_limit = 85
-set horizon_tilt_effect = 75
-set horizon_tilt_expert_mode = OFF
-set abs_control_gain = 0
+set horizon_tilt_effect = 80
+set horizon_tilt_expert_mode = ON
+set abs_control_gain = 20
 set abs_control_limit = 90
 set abs_control_error_limit = 20
 set abs_control_cutoff = 11
@@ -976,25 +974,24 @@ set rateprofile_name = -
 set thr_mid = 50
 set thr_expo = 0
 set rates_type = BETAFLIGHT
-set roll_rc_rate = 100
-set pitch_rc_rate = 100
-set yaw_rc_rate = 100
-set roll_expo = 15
-set pitch_expo = 15
-set yaw_expo = 15
-set roll_srate = 73
-set pitch_srate = 73
-set yaw_srate = 73
+set roll_rc_rate = 1
+set pitch_rc_rate = 1
+set yaw_rc_rate = 200
+set roll_expo = 0
+set pitch_expo = 0
+set yaw_expo = 0
+set roll_srate = 0
+set pitch_srate = 0
+set yaw_srate = 0
 set tpa_rate = 65
 set tpa_breakpoint = 1250
 set tpa_mode = D
 set throttle_limit_type = OFF
-set throttle_limit_percent = 100
+set throttle_limit_percent = 90
 set roll_rate_limit = 1998
 set pitch_rate_limit = 1998
 set yaw_rate_limit = 1998
 
 # end the command batch
 batch end
-
-# 
+
