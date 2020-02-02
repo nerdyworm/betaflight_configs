@@ -1,3 +1,5 @@
+dump
+
 # version
 # Betaflight / HMBF41S_FRSKY_INTL (HMBF4) 4.1.0 Jan 18 2020 / 16:39:36 (154272bf0) MSP API: 1.42
 
@@ -509,7 +511,7 @@ set airmode_start_throttle_percent = 25
 set rx_min_usec = 885
 set rx_max_usec = 2115
 set serialrx_halfduplex = OFF
-set rx_spi_protocol = FRSKY_X
+set rx_spi_protocol = FRSKY_D
 set rx_spi_bus = 2
 set rx_spi_led_inversion = OFF
 set adc_device = 1
@@ -685,8 +687,8 @@ set osd_warn_batt_warning = ON
 set osd_warn_batt_critical = ON
 set osd_warn_visual_beeper = ON
 set osd_warn_crash_flip = ON
-set osd_warn_esc_fail = ON
-set osd_warn_core_temp = ON
+set osd_warn_esc_fail = OFF
+set osd_warn_core_temp = OFF
 set osd_warn_rc_smoothing = ON
 set osd_warn_fail_safe = ON
 set osd_warn_launch_control = ON
@@ -708,25 +710,25 @@ set osd_ah_max_rol = 40
 set osd_ah_invert = OFF
 set osd_tim1 = 2560
 set osd_tim2 = 2561
-set osd_vbat_pos = 2400
-set osd_rssi_pos = 2048
+set osd_vbat_pos = 2402
+set osd_rssi_pos = 2370
 set osd_link_quality_pos = 234
 set osd_rssi_dbm_pos = 234
 set osd_tim_1_pos = 234
-set osd_tim_2_pos = 2368
+set osd_tim_2_pos = 2423
 set osd_remaining_time_estimate_pos = 234
-set osd_flymode_pos = 2336
+set osd_flymode_pos = 2391
 set osd_anti_gravity_pos = 234
 set osd_g_force_pos = 234
-set osd_throttle_pos = 234
-set osd_vtx_channel_pos = 297
-set osd_crosshairs_pos = 2254
+set osd_throttle_pos = 321
+set osd_vtx_channel_pos = 234
+set osd_crosshairs_pos = 2285
 set osd_ah_sbar_pos = 206
 set osd_ah_pos = 78
-set osd_current_pos = 342
+set osd_current_pos = 234
 set osd_mah_drawn_pos = 234
 set osd_motor_diag_pos = 234
-set osd_craft_name_pos = 11
+set osd_craft_name_pos = 2411
 set osd_display_name_pos = 234
 set osd_gps_speed_pos = 234
 set osd_gps_lon_pos = 234
@@ -743,7 +745,7 @@ set osd_pid_yaw_pos = 234
 set osd_debug_pos = 234
 set osd_power_pos = 234
 set osd_pidrate_profile_pos = 234
-set osd_warnings_pos = 2410
+set osd_warnings_pos = 2345
 set osd_avg_cell_voltage_pos = 234
 set osd_pit_ang_pos = 234
 set osd_rol_ang_pos = 234
@@ -824,10 +826,10 @@ set displayport_max7456_wht = 2
 set esc_sensor_halfduplex = OFF
 set esc_sensor_current_offset = 0
 set frsky_spi_autobind = OFF
-set frsky_spi_tx_id = 50,154
-set frsky_spi_offset = -6
-set frsky_spi_bind_hop_data = 6,39,74,109,144,179,214,14,49,84,119,154,189,224,24,59,94,129,164,199,234,34,69,104,139,174,209,9,44,79,114,149,184,219,19,54,89,124,159,194,229,29,64,99,136,169,204,0,0,0
-set frsky_x_rx_num = 4
+set frsky_spi_tx_id = 253,179
+set frsky_spi_offset = 28
+set frsky_spi_bind_hop_data = 2,162,87,12,172,97,22,182,107,32,192,117,42,202,127,52,212,137,62,222,147,72,232,157,82,7,167,92,17,179,102,27,187,112,37,197,122,49,207,132,57,217,142,67,227,152,77,0,0,0
+set frsky_x_rx_num = 202
 set frsky_spi_a1_source = VBAT
 set cc2500_spi_chip_detect = ON
 set led_inversion = 0
@@ -994,4 +996,5 @@ set yaw_rate_limit = 1998
 
 # end the command batch
 batch end
-
+
+# 
