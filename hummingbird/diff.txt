@@ -33,41 +33,71 @@ adjrange 0 0 1 900 2100 12 1 0 0
 
 # master
 set gyro_sync_denom = 2
-set gyro_lowpass2_hz = 325
-set dyn_lpf_gyro_min_hz = 260
-set dyn_lpf_gyro_max_hz = 650
+set gyro_lowpass2_hz = 250
+set dyn_notch_range = LOW
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 250
+set dyn_notch_min_hz = 100
+set dyn_lpf_gyro_min_hz = 0
+set dyn_lpf_gyro_max_hz = 475
+set acc_trim_pitch = -16
 set acc_calibration = 35,-82,150
-set fpv_mix_degrees = 12
+set min_check = 1007
+set max_check = 2000
+set fpv_mix_degrees = 13
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
+set vbat_min_cell_voltage = 300
+set vbat_warning_cell_voltage = 300
 set beeper_dshot_beacon_tone = 3
 set yaw_motors_reversed = ON
-set osd_flymode_pos = 2348
+set thrust_linear = 30
+set osd_vbat_pos = 2402
+set osd_rssi_pos = 2082
+set osd_tim_2_pos = 2103
+set osd_flymode_pos = 2424
 set osd_vtx_channel_pos = 297
-set osd_craft_name_pos = 2378
+set osd_current_pos = 342
+set osd_craft_name_pos = 2409
+set osd_warnings_pos = 2377
+set osd_stat_max_spd = OFF
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set osd_stat_max_esc_rpm = ON
+set osd_stat_total_time = ON
 set frsky_spi_tx_id = 231,78
 set frsky_spi_offset = 2
 set frsky_spi_bind_hop_data = 6,34,64,94,124,154,184,214,9,39,69,99,129,159,189,219,14,44,74,104,136,164,194,224,19,49,79,109,139,169,199,229,24,54,84,114,144,174,204,234,29,59,89,119,149,179,209,0,0,0
+set gyro_rpm_notch_harmonics = 2
 set name = nerdyworm
 
 profile 0
 
 # profile 0
-set dyn_lpf_dterm_min_hz = 91
-set dyn_lpf_dterm_max_hz = 221
-set dterm_lowpass2_hz = 195
-set i_pitch = 81
-set d_pitch = 45
-set f_pitch = 86
-set p_roll = 50
-set i_roll = 77
-set d_roll = 45
-set f_roll = 81
-set p_yaw = 40
-set i_yaw = 81
-set f_yaw = 81
-set angle_level_strength = 110
-set d_min_pitch = 20
+set dyn_lpf_dterm_min_hz = 0
+set dyn_lpf_dterm_max_hz = 170
+set dterm_lowpass2_hz = 0
+set iterm_rotation = OFF
+set iterm_relax = RP
+set iterm_relax_type = SETPOINT
+set iterm_relax_cutoff = 10
+set p_pitch = 83
+set i_pitch = 162
+set d_pitch = 79
+set f_pitch = 171
+set p_roll = 76
+set i_roll = 153
+set d_roll = 72
+set f_roll = 162
+set p_yaw = 108
+set i_yaw = 162
+set f_yaw = 162
+set angle_level_strength = 100
+set horizon_level_strength = 30
+set horizon_transition = 85
+set level_limit = 65
+set d_min_roll = 0
+set d_min_pitch = 0
 
 profile 1
 
@@ -85,11 +115,19 @@ set yaw_rc_rate = 210
 set roll_expo = 0
 set pitch_expo = 0
 set yaw_expo = 0
-set roll_srate = 0
-set pitch_srate = 0
-set yaw_srate = 0
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 20
 
 rateprofile 1
+
+# rateprofile 1
+set yaw_rc_rate = 210
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 20
+set tpa_rate = 0
+set tpa_breakpoint = 2000
 
 rateprofile 2
 
@@ -100,6 +138,8 @@ set yaw_expo = 10
 set roll_srate = 59
 set pitch_srate = 59
 set yaw_srate = 59
+set tpa_rate = 0
+set tpa_breakpoint = 2000
 
 rateprofile 3
 
