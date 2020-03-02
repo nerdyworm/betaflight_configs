@@ -1,0 +1,44 @@
+diff all
+
+# version
+# Betaflight / HMBF41S_FRSKY_US (HMBF4) 4.1.0 Mar  2 2020 / 19:00:10 (20f73bc6b) MSP API: 1.42
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name HMBF41S_FRSKY_US
+mcu_id 0037001c3038510b37363431
+signature 
+
+# name: Humming Bird
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 

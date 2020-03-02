@@ -1,7 +1,7 @@
 diff all
 
 # version
-# Betaflight / HMBF41S_FRSKY_INTL (HMBF4) 4.1.0 Jan 18 2020 / 16:39:36 (154272bf0) MSP API: 1.42
+# Betaflight / HMBF41S_FRSKY_US (HMBF4) 4.1.0 Mar  2 2020 / 19:00:10 (20f73bc6b) MSP API: 1.42
 
 # start the command batch
 batch start
@@ -9,7 +9,7 @@ batch start
 # reset configuration to default settings
 defaults nosave
 
-board_name HMBF41S_FRSKY_INTL
+board_name HMBF41S_FRSKY_US
 mcu_id 0037001c3038510b37363431
 signature 
 
@@ -20,9 +20,6 @@ beacon RX_SET
 
 # map
 map TAER1234
-
-# serial
-serial 0 1 115200 57600 0 115200
 
 # aux
 aux 3 13 2 1300 1700 0 0
