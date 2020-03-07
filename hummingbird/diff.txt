@@ -1,7 +1,7 @@
 diff all
 
 # version
-# Betaflight / HMBF41S_FRSKY_US (HMBF4) 4.1.0 Mar  2 2020 / 19:00:10 (20f73bc6b) MSP API: 1.42
+# Betaflight / HMBF41S_FRSKY_US (HMBF4) 4.1.0 Mar  2 2020 / 18:56:03 (20f73bc6b) MSP API: 1.42
 
 # start the command batch
 batch start
@@ -79,7 +79,6 @@ set f_roll = 162
 set p_yaw = 108
 set i_yaw = 162
 set f_yaw = 162
-set angle_level_strength = 100
 set horizon_level_strength = 30
 set horizon_transition = 85
 set d_min_roll = 0
@@ -101,9 +100,9 @@ set yaw_rc_rate = 210
 set roll_expo = 0
 set pitch_expo = 0
 set yaw_expo = 0
-set roll_srate = 80
-set pitch_srate = 80
-set yaw_srate = 20
+set roll_srate = 0
+set pitch_srate = 0
+set yaw_srate = 0
 
 rateprofile 1
 
@@ -118,12 +117,6 @@ set tpa_breakpoint = 2000
 rateprofile 2
 
 # rateprofile 2
-set roll_expo = 1
-set pitch_expo = 1
-set yaw_expo = 10
-set roll_srate = 59
-set pitch_srate = 59
-set yaw_srate = 59
 set tpa_rate = 0
 set tpa_breakpoint = 2000
 
@@ -134,7 +127,7 @@ rateprofile 4
 rateprofile 5
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 2
 
 # save configuration
 save
